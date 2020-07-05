@@ -1,0 +1,11 @@
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+Layout/LineLength:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FormatString:
+  EnforcedStyle: sprintf
+Style/FrozenStringLiteralComment:
+  Enabled: false
