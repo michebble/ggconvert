@@ -7,6 +7,13 @@ class Snes
     @formatter = formatter
   end
 
+  def to_mister_format(code)
+    result = decrypt(code)
+    @formatter.new(result).format
+  end
+
+  private
+
   def to_raw(code)
     result = decrypt(code)
     [
@@ -15,13 +22,6 @@ class Snes
       result[:compare]
     ].compact.join(':')
   end
-
-  def to_mister_format(code)
-    result = decrypt(code)
-    @formatter.new(result).format
-  end
-
-  private
 
   def decrypt(code)
     bit_string = to_bit_string(code)
