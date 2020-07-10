@@ -3,12 +3,14 @@ require 'pry'
 class ChtReader
   def initialize(path)
     @path = path
-    @output = parse_file
+    @entries = parse_file
   end
 
   def title
     @title ||= File.basename(path, '.cht')
   end
+
+  def code_list() end
 
   private
 
@@ -24,7 +26,11 @@ class ChtReader
     output
   end
 
-  def reduce_codes(file_output) end
+  def reduce_codes
+    entries.reduce do |entry|
 
-  attr_reader :path
+    end
+  end
+
+  attr_reader :path, :output
 end
