@@ -1,0 +1,13 @@
+cheats = 3
+
+cheat0_desc = "1-Hit Max. Weapon %"
+cheat0_code = "DDD3-5FF4"
+cheat0_enable = false
+
+cheat1_desc = "1-Hit Max. Armor %"
+cheat1_code = "DDD7-8DB4"
+cheat1_enable = false
+
+cheat2_desc = "1-Flight Max. Vernier %"
+cheat2_code = "DDD1-8D94"
+cheat2_enable = false
